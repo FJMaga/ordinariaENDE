@@ -23,10 +23,10 @@ public class OrdinariaENDE {
         int longitud = palabra.length();
         for (int i = 0; i < longitud / 2; i++) {
             if (palabra.charAt(i) == palabra.charAt(longitud - 1 - i)) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     public static String quitarAcentos(String palabra) {
